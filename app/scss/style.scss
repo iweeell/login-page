@@ -10,13 +10,18 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.header {
+.login,
+.register {
   height: 100vh;
   background-image: url('../images/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2148C0;
+}
+
+.register {
+  background-color: #8E21C0;
 }
 
 .container {
@@ -26,10 +31,11 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
 }
 
 .title {
-  font-size: 78px;
+  font-size: 72px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 70px;
@@ -37,6 +43,10 @@ body {
 
 .form {
   width: 100%;
+
+  &__inner {
+    margin: 40px 0;
+  }
 }
 
 .input {
@@ -93,7 +103,13 @@ body {
       background-image: url('../images/lock.svg');
     }
   }
-  
+
+  &--email {
+    &::before {
+      background-image: url('../images/email.svg');
+    }
+  }
+
 }
 
 .btn {
@@ -130,4 +146,24 @@ body {
       opacity: 1;
     }
   }
+}
+
+.register {
+  & .link {
+    justify-content: flex-end;
+
+    &__icon {
+      margin-right: 5px;
+      transform: rotate(180deg);
+    }
+  
+    &:hover {
+      transform: translateX(-10px);
+  
+      & .link__icon {
+        opacity: 1;
+      }
+    }
+  }
+
 }
