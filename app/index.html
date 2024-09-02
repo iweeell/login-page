@@ -18,18 +18,22 @@
 
     <div class="login">
       <div class="container">
-        <h1 class="title">
-          log in
-        </h1>
+        <h2 class="title">log in</h2>
         <form action="#" class="form">
           <label class="label label--name">
             <input type="text" class="input" placeholder="username">
           </label>
           <label class="label label--pass">
-            <input type="password" class="input" placeholder="password">
+            <input type="password" class="input input__password" placeholder="password">
+              <button class="toggle_button" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  width="15" height="15">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </button>
           </label>
-
-
           <button class="btn" type="submit">login</button>
         </form>
         <a href="#" class="link" id="create">create an account
@@ -45,19 +49,33 @@
 
     <div class="register create-hidden">
       <div class="container">
-        <h1 class="title">
-          create
-        </h1>
-        <form action="#" class="form-create">
+        <h2 class="title">create</h2>
+        <form action="#" class="form form-create">
           <label class="label label--name">
             <input type="text" class="input" name="name" placeholder="username">
           </label>
           <div class="form__inner">
             <label class="label label--pass">
-              <input type="password" class="input" name="pass" placeholder="password">
+              <input type="password" class="input input__password" name="pass" placeholder="password">
+                <button class="toggle_button" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    width="15" height="15">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </button>
             </label>
             <label class="label label--pass">
-              <input type="password" class="input" name="repass" placeholder="password">
+              <input type="password" class="input input__password" name="repass" placeholder="password">
+                <button class="toggle_button">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    width="15" height="15">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </button>
             </label>
           </div>
           <label class="label label--email">
